@@ -1,0 +1,214 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Matches.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div v-if=\"userMatches && heroStats\">\r\n      <table class=\"table-auto recent-match\">\r\n        <thead>\r\n          <tr>\r\n            <th>Hero</th>\r\n            <th>Result</th>\r\n            <th>Mode</th>\r\n            <th>Team</th>\r\n            <th>KDA</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr v-for=\"(value, key) in userMatches\" :key=\"key\">\r\n            <td>\r\n              <div class=\"flex gap-2\">\r\n                <img :src=\"`/images/heroes/${heroStats[value.hero_id].localized_name.toLowerCase().replaceAll(' ', '_').replaceAll('-', '_').replaceAll(`'`, '_')}_sb.png`\" alt=\"hero-image\">\r\n                <span class=\"text-white\">{{ heroStats[value.hero_id].localized_name }}</span>\r\n              </div>\r\n            </td>\r\n            <td>\r\n              <span :class=\"[value.radiant_win ? 'text-green-500' : 'text-red-500', 'font-bold']\">{{ gameResult(`${value.radiant_win}`,team(`${value.player_slot}`)) }}</span>\r\n            </td>\r\n            <td>\r\n              <div class=\"flex flex-col\">\r\n                <span class=\"text-white\">{{ gameModes[value.game_mode].localized_name }}</span>\r\n                <span class=\"text-white\">{{ durationCalc(value.duration) }}</span>\r\n              </div>\r\n            </td>\r\n            <td>\r\n              <span class=\"text-white\">{{ team(`${value.player_slot}`) }}</span>\r\n            </td>\r\n            <td>\r\n              <span class=\"text-white\">{{ `${value.kills}/${value.deaths}/${value.assists}` }}</span>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n</template>\r\n\r\n<script setup>\r\nimport gameModes from '~/assets/json/gamemodes.json'\r\n\r\nconst props = defineProps({\r\n  userMatches: {\r\n    type: Array,\r\n    default: () => []\r\n  },\r\n  heroStats: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n})\r\n\r\nfunction team (val) {\r\n  return (val > 127 ? 'Dire' : 'Radiant')\r\n}\r\n\r\nfunction gameResult (val, team) {\r\n  return ((team === 'Radiant' && val === 'true') || (team === 'Dire' && val === 'false') ? 'Won' : 'Lost')\r\n}\r\n\r\nfunction durationCalc (val) {\r\n  val /= 60\r\n  let m = Math.floor(val)\r\n  let s = Math.ceil((val - Math.floor(val)) * 60)\r\n  return s < 10 ? m + ':0' + s : m + ':' + s\r\n}\r\n</script>\r\n",
+      "start": 1709213235022,
+      "end": 1709213235102,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213235102,
+      "end": 1709213235102,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213235102,
+      "end": 1709213235102,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213235102,
+      "end": 1709213235102,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213235102,
+      "end": 1709213235102,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213235102,
+      "end": 1709213235102,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213235102,
+      "end": 1709213235102,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213235102,
+      "end": 1709213235102,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass, unref as _unref, createCommentVNode as _createCommentVNode } from \"vue\"\n\nconst _hoisted_1 = { key: 0 }\nconst _hoisted_2 = { class: \"table-auto recent-match\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"thead\", null, [\n  /*#__PURE__*/_createElementVNode(\"tr\", null, [\n    /*#__PURE__*/_createElementVNode(\"th\", null, \"Hero\"),\n    /*#__PURE__*/_createElementVNode(\"th\", null, \"Result\"),\n    /*#__PURE__*/_createElementVNode(\"th\", null, \"Mode\"),\n    /*#__PURE__*/_createElementVNode(\"th\", null, \"Team\"),\n    /*#__PURE__*/_createElementVNode(\"th\", null, \"KDA\")\n  ])\n], -1)\nconst _hoisted_4 = { class: \"flex gap-2\" }\nconst _hoisted_5 = [\"src\"]\nconst _hoisted_6 = { class: \"text-white\" }\nconst _hoisted_7 = { class: \"flex flex-col\" }\nconst _hoisted_8 = { class: \"text-white\" }\nconst _hoisted_9 = { class: \"text-white\" }\nconst _hoisted_10 = { class: \"text-white\" }\nconst _hoisted_11 = { class: \"text-white\" }\n\nimport gameModes from '~/assets/json/gamemodes.json'\r\n\r\n\nconst _sfc_main = {\n  __name: 'Matches',\n  props: {\r\n  userMatches: {\r\n    type: Array,\r\n    default: () => []\r\n  },\r\n  heroStats: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nfunction team (val) {\r\n  return (val > 127 ? 'Dire' : 'Radiant')\r\n}\r\n\r\nfunction gameResult (val, team) {\r\n  return ((team === 'Radiant' && val === 'true') || (team === 'Dire' && val === 'false') ? 'Won' : 'Lost')\r\n}\r\n\r\nfunction durationCalc (val) {\r\n  val /= 60\r\n  let m = Math.floor(val)\r\n  let s = Math.ceil((val - Math.floor(val)) * 60)\r\n  return s < 10 ? m + ':0' + s : m + ':' + s\r\n}\r\n\nreturn (_ctx, _cache) => {\n  return (__props.userMatches && __props.heroStats)\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"table\", _hoisted_2, [\n          _hoisted_3,\n          _createElementVNode(\"tbody\", null, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.userMatches, (value, key) => {\n              return (_openBlock(), _createElementBlock(\"tr\", { key: key }, [\n                _createElementVNode(\"td\", null, [\n                  _createElementVNode(\"div\", _hoisted_4, [\n                    _createElementVNode(\"img\", {\n                      src: `/images/heroes/${__props.heroStats[value.hero_id].localized_name.toLowerCase().replaceAll(' ', '_').replaceAll('-', '_').replaceAll(`'`, '_')}_sb.png`,\n                      alt: \"hero-image\"\n                    }, null, 8, _hoisted_5),\n                    _createElementVNode(\"span\", _hoisted_6, _toDisplayString(__props.heroStats[value.hero_id].localized_name), 1)\n                  ])\n                ]),\n                _createElementVNode(\"td\", null, [\n                  _createElementVNode(\"span\", {\n                    class: _normalizeClass([value.radiant_win ? 'text-green-500' : 'text-red-500', 'font-bold'])\n                  }, _toDisplayString(gameResult(`${value.radiant_win}`,team(`${value.player_slot}`))), 3)\n                ]),\n                _createElementVNode(\"td\", null, [\n                  _createElementVNode(\"div\", _hoisted_7, [\n                    _createElementVNode(\"span\", _hoisted_8, _toDisplayString(_unref(gameModes)[value.game_mode].localized_name), 1),\n                    _createElementVNode(\"span\", _hoisted_9, _toDisplayString(durationCalc(value.duration)), 1)\n                  ])\n                ]),\n                _createElementVNode(\"td\", null, [\n                  _createElementVNode(\"span\", _hoisted_10, _toDisplayString(team(`${value.player_slot}`)), 1)\n                ]),\n                _createElementVNode(\"td\", null, [\n                  _createElementVNode(\"span\", _hoisted_11, _toDisplayString(`${value.kills}/${value.deaths}/${value.assists}`), 1)\n                ])\n              ]))\n            }), 128))\n          ])\n        ])\n      ]))\n    : _createCommentVNode(\"\", true)\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1709213235102,
+      "end": 1709213235105,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213235105,
+      "end": 1709213235105,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213235105,
+      "end": 1709213235106,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213235106,
+      "end": 1709213235106,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213235106,
+      "end": 1709213235106,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213235106,
+      "end": 1709213235106,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213235106,
+      "end": 1709213235106,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213235106,
+      "end": 1709213235107,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213235107,
+      "end": 1709213235107,
+      "order": "normal"
+    }
+  ]
+}

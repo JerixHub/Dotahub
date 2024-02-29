@@ -1,0 +1,184 @@
+@import '_fonts';
+
+:root {
+    --header-bg: #161616;
+    --red: #B01220;
+    --default-font-size: 1rem;
+    --default-font-weight: 400;
+    --default-line-height: 1.5;
+    --bg-dota: url('../images/bg-dota.png')
+}
+
+body {
+    font-family: 'Oxanium', sans-serif;
+    font-size: var(--default-font-size);
+    font-weight: var(--default-font-weight);
+    line-height: var(--default-line-height);
+}
+
+.header-bg{
+    background: linear-gradient(90deg, #242627, #131617);
+}
+
+.bg-dota{
+    background: var(--bg-dota);
+    height: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+.bg-red{
+    background-color: var(--red);
+}
+
+.red{ 
+    color: var(--red);
+}
+
+.font-trajan{
+    font-family: 'Trajan'
+}
+
+.font-oxanium{
+    font-family: 'Oxanium'
+}
+
+p.leaderboard{
+    position: relative;
+    top: -45px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-ability-bg{
+    background: linear-gradient(90deg, #242627, #131617);
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    left: 0;
+    margin-top: 40px;
+}
+
+.hero-img{
+    width: 150px;
+}
+
+.hero-healthbar {
+    width: 150px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to right, #286323, #7AF03C);
+    position: relative;
+}
+
+.hero-manabar {
+    width: 150px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to right, #1056DB, #73F5FE);
+    position: relative;
+}
+
+.hero-base-health, .hero-base-mana {
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+}
+
+.hero-base-health-regen, .hero-base-mana-regen {
+    color: #286323;
+    flex-grow: 1;
+    text-align: right;
+    font-size: 11px;
+    padding-right: 16px;
+    font-weight: bold;
+}
+
+.attributes img{
+    width: 30px;
+}
+
+.attributes span{    
+    text-shadow: 1px 1px 2px #000;
+}
+
+.attributes .gain {
+    color: #999;
+}
+
+.hero-attributes {
+    width: 30%;
+}
+
+.border-separator {
+    width: 1px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+}
+
+.border-separator::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #4f4f4f;
+}
+
+.hero-info .most_attr_hero{
+    text-shadow: 1px 1px 2px #000;
+}
+
+.tabber-parent{
+    border-bottom: 1px solid white;
+}
+
+.tabber.active {
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-bottom: none;
+    background-color: #191b1c;
+}
+
+.tabber:not(.active){
+    padding: 10px 15px;
+}
+
+.tab-container{
+    border: 1px solid white;
+    background: linear-gradient(90deg, #242627, #131617);
+    border-top: none;
+}
+
+table.recent-match, table.user-heroes, table.user-friends{
+    width: 100%;
+    margin-top: 20px;
+}
+
+table.recent-match thead, table.user-heroes thead, table.user-friends thead{
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+table.recent-match thead>tr>th, table.user-heroes thead>tr>th, table.user-friends thead>tr>th{
+    text-align: left;
+    color: white;
+}
+
+table.recent-match tbody>tr>td, table.user-heroes tbody>tr>td, table.user-friends tbody>tr>td{
+    padding: 15px 0px;
+    border-bottom: 1px solid white;
+}
+
+table.recent-match tbody>tr:hover, table.user-heroes tbody>tr:hover, table.user-friends tbody>tr:hover{
+    background-color: #2A3032;
+}

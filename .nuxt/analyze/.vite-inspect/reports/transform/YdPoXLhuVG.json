@@ -1,0 +1,215 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Header.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div class=\"header-bg p-3\" style=\"z-index: 9999;\">\r\n        <div class=\"container mx-auto\">\r\n            <div class=\"flex items-center justify-between\">\r\n                <div>\r\n                    <NuxtLink to=\"/\">\r\n                        <img :src=\"Logo\" alt=\"logo\">\r\n                    </NuxtLink>\r\n                </div>\r\n                <Search />\r\n            </div>\r\n        </div>\r\n    </div>\r\n</template>\r\n\r\n<script setup>\r\nimport Logo from '@/assets/images/logo.png'\r\n\r\nconst props = defineProps({\r\n  layout: {\r\n    type: String,\r\n    default: 'default'\r\n  }\r\n})\r\n</script>\r\n",
+      "start": 1709213234770,
+      "end": 1709213234989,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213234989,
+      "end": 1709213234989,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213234989,
+      "end": 1709213234989,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213234989,
+      "end": 1709213234989,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213234989,
+      "end": 1709213234989,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213234989,
+      "end": 1709213234989,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213234989,
+      "end": 1709213234989,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213234989,
+      "end": 1709213234989,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = {\n  class: \"header-bg p-3\",\n  style: {\"z-index\":\"9999\"}\n}\nconst _hoisted_2 = { class: \"container mx-auto\" }\nconst _hoisted_3 = { class: \"flex items-center justify-between\" }\nconst _hoisted_4 = [\"src\"]\n\nimport Logo from '@/assets/images/logo.png'\r\n\r\n\nconst _sfc_main = {\n  __name: 'Header',\n  props: {\r\n  layout: {\r\n    type: String,\r\n    default: 'default'\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n  const _component_Search = _resolveComponent(\"Search\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", null, [\n          _createVNode(_component_NuxtLink, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"img\", {\n                src: _unref(Logo),\n                alt: \"logo\"\n              }, null, 8, _hoisted_4)\n            ]),\n            _: 1\n          })\n        ]),\n        _createVNode(_component_Search)\n      ])\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1709213234989,
+      "end": 1709213234991,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213234991,
+      "end": 1709213234991,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213234991,
+      "end": 1709213234992,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Jerixhub/Documents/Dota2/dotahub/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_1 } from \"C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Search.vue\";\nimport { unref as _unref, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = {\n  class: \"header-bg p-3\",\n  style: {\"z-index\":\"9999\"}\n}\nconst _hoisted_2 = { class: \"container mx-auto\" }\nconst _hoisted_3 = { class: \"flex items-center justify-between\" }\nconst _hoisted_4 = [\"src\"]\n\nimport Logo from '@/assets/images/logo.png'\r\n\r\n\nconst _sfc_main = {\n  __name: 'Header',\n  props: {\r\n  layout: {\r\n    type: String,\r\n    default: 'default'\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = __nuxt_component_0\n  const _component_Search = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", null, [\n          _createVNode(_component_NuxtLink, { to: \"/\" }, {\n            default: _withCtx(() => [\n              _createElementVNode(\"img\", {\n                src: _unref(Logo),\n                alt: \"logo\"\n              }, null, 8, _hoisted_4)\n            ]),\n            _: 1\n          })\n        ]),\n        _createVNode(_component_Search)\n      ])\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213234992,
+      "end": 1709213234992,
+      "order": "normal"
+    }
+  ]
+}

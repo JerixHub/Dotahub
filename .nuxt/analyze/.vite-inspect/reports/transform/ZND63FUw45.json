@@ -1,0 +1,215 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/SearchResultsItem.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <li class=\"px-2 py-3 hover:bg-gray-100\">\r\n        <NuxtLink :to=\"`/profile/${user.account_id}`\" @click=\"emit('onEnter')\">\r\n            <div class=\"flex items-center gap-3\">\r\n                <img :src=\"user.avatarfull\" alt=\"avatar\" class=\"max-w-14 rounded-full\">\r\n                <div class=\"flex flex-col\">\r\n                    <span class=\"font-bold\">Name: {{ user.personaname }}</span>\r\n                    <span class=\"font-bold\">ID: {{ user.account_id }}</span>\r\n                </div>\r\n            </div>\r\n        </NuxtLink>\r\n    </li>\r\n</template>\r\n\r\n<script setup>\r\nconst props = defineProps({\r\n  user: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n})\r\n</script>\r\n",
+      "start": 1709213235259,
+      "end": 1709213235269,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213235269,
+      "end": 1709213235269,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213235269,
+      "end": 1709213235269,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213235269,
+      "end": 1709213235269,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213235269,
+      "end": 1709213235269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213235269,
+      "end": 1709213235269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213235269,
+      "end": 1709213235269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213235269,
+      "end": 1709213235269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-2 py-3 hover:bg-gray-100\" }\nconst _hoisted_2 = { class: \"flex items-center gap-3\" }\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = { class: \"flex flex-col\" }\nconst _hoisted_5 = { class: \"font-bold\" }\nconst _hoisted_6 = { class: \"font-bold\" }\n\n\nconst _sfc_main = {\n  __name: 'SearchResultsItem',\n  props: {\r\n  user: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  return (_openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n    _createVNode(_component_NuxtLink, {\n      to: `/profile/${__props.user.account_id}`,\n      onClick: _cache[0] || (_cache[0] = $event => (_ctx.emit('onEnter')))\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"img\", {\n            src: __props.user.avatarfull,\n            alt: \"avatar\",\n            class: \"max-w-14 rounded-full\"\n          }, null, 8, _hoisted_3),\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createElementVNode(\"span\", _hoisted_5, \"Name: \" + _toDisplayString(__props.user.personaname), 1),\n            _createElementVNode(\"span\", _hoisted_6, \"ID: \" + _toDisplayString(__props.user.account_id), 1)\n          ])\n        ])\n      ]),\n      _: 1\n    }, 8, [\"to\"])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1709213235269,
+      "end": 1709213235271,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213235271,
+      "end": 1709213235271,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235271,
+      "end": 1709213235271,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213235271,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Jerixhub/Documents/Dota2/dotahub/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"px-2 py-3 hover:bg-gray-100\" }\nconst _hoisted_2 = { class: \"flex items-center gap-3\" }\nconst _hoisted_3 = [\"src\"]\nconst _hoisted_4 = { class: \"flex flex-col\" }\nconst _hoisted_5 = { class: \"font-bold\" }\nconst _hoisted_6 = { class: \"font-bold\" }\n\n\nconst _sfc_main = {\n  __name: 'SearchResultsItem',\n  props: {\r\n  user: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"li\", _hoisted_1, [\n    _createVNode(_component_NuxtLink, {\n      to: `/profile/${__props.user.account_id}`,\n      onClick: _cache[0] || (_cache[0] = $event => (_ctx.emit('onEnter')))\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"img\", {\n            src: __props.user.avatarfull,\n            alt: \"avatar\",\n            class: \"max-w-14 rounded-full\"\n          }, null, 8, _hoisted_3),\n          _createElementVNode(\"div\", _hoisted_4, [\n            _createElementVNode(\"span\", _hoisted_5, \"Name: \" + _toDisplayString(__props.user.personaname), 1),\n            _createElementVNode(\"span\", _hoisted_6, \"ID: \" + _toDisplayString(__props.user.account_id), 1)\n          ])\n        ])\n      ]),\n      _: 1\n    }, 8, [\"to\"])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213235272,
+      "end": 1709213235272,
+      "order": "normal"
+    }
+  ]
+}

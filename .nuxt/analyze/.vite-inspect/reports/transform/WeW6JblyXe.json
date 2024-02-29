@@ -1,0 +1,215 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/layouts/default.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div>\r\n    <NuxtLoadingIndicator />\r\n    <Header />\r\n    <div class=\"container-fluid bg-dota\">\r\n      <div class=\"container mx-auto\">\r\n        <slot />\r\n      </div>\r\n    </div>\r\n  </div>\r\n</template>\r\n",
+      "start": 1709213234191,
+      "end": 1709213234711,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213234711,
+      "end": 1709213234711,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213234711,
+      "end": 1709213234711,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213234711,
+      "end": 1709213234711,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213234711,
+      "end": 1709213234711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213234711,
+      "end": 1709213234711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213234711,
+      "end": 1709213234711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213234711,
+      "end": 1709213234711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"container-fluid bg-dota\" }\nconst _hoisted_2 = { class: \"container mx-auto\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_NuxtLoadingIndicator = _resolveComponent(\"NuxtLoadingIndicator\")\n  const _component_Header = _resolveComponent(\"Header\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLoadingIndicator),\n    _createVNode(_component_Header),\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _renderSlot(_ctx.$slots, \"default\")\n      ])\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709213234711,
+      "end": 1709213234713,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213234713,
+      "end": 1709213234713,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213234713,
+      "end": 1709213234714,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Jerixhub/Documents/Dota2/dotahub/node_modules/nuxt/dist/app/components/nuxt-loading-indicator\";\nimport { default as __nuxt_component_1 } from \"C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Header.vue\";\nconst _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, renderSlot as _renderSlot, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"container-fluid bg-dota\" }\nconst _hoisted_2 = { class: \"container mx-auto\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_NuxtLoadingIndicator = __nuxt_component_0\n  const _component_Header = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_NuxtLoadingIndicator),\n    _createVNode(_component_Header),\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _renderSlot(_ctx.$slots, \"default\")\n      ])\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213234714,
+      "end": 1709213234714,
+      "order": "normal"
+    }
+  ]
+}

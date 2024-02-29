@@ -1,0 +1,1 @@
+import{_ as t}from"./Header.DJY1rVWC.js";import{_ as a,o as n,c as r,k as s,a as c,v as _}from"./entry.D7iSw0zz.js";import"./nuxt-link.lzEYtEqx.js";import"./store.BbNEq1nT.js";const d={},l={class:"container-fluid pb-14"};function i(e,f){const o=t;return n(),r("div",null,[s(o,{layout:"fluid"}),c("div",l,[_(e.$slots,"default")])])}const v=a(d,[["render",i]]);export{v as default};

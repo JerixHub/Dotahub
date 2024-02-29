@@ -1,0 +1,214 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/assets/json/gamemodes.json",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "{\r\n    \"0\": {\r\n      \"id\": 0,\r\n      \"name\": \"game_mode_unknown\",\r\n      \"localized_name\": \"Unknown\",\r\n      \"balanced\": true\r\n    },\r\n    \"1\": {\r\n      \"id\": 1,\r\n      \"name\": \"game_mode_all_pick\",\r\n      \"localized_name\": \"All Pick\",\r\n      \"balanced\": true\r\n    },\r\n    \"2\": {\r\n      \"id\": 2,\r\n      \"name\": \"game_mode_captains_mode\",\r\n      \"localized_name\": \"Captains Mode\",\r\n      \"balanced\": true\r\n    },\r\n    \"3\": {\r\n      \"id\": 3,\r\n      \"name\": \"game_mode_random_draft\",\r\n      \"localized_name\": \"Random Draft\",\r\n      \"balanced\": true\r\n    },\r\n    \"4\": {\r\n      \"id\": 4,\r\n      \"name\": \"game_mode_single_draft\",\r\n      \"localized_name\": \"Single Draft\",\r\n      \"balanced\": true\r\n    },\r\n    \"5\": {\r\n      \"id\": 5,\r\n      \"name\": \"game_mode_all_random\",\r\n      \"localized_name\": \"All Random\",\r\n      \"balanced\": true\r\n    },\r\n    \"6\": {\r\n      \"id\": 6,\r\n      \"name\": \"game_mode_intro\",\r\n      \"localized_name\": \"Intro\"\r\n    },\r\n    \"7\": {\r\n      \"id\": 7,\r\n      \"name\": \"game_mode_diretide\",\r\n      \"localized_name\": \"Diretide\"\r\n    },\r\n    \"8\": {\r\n      \"id\": 8,\r\n      \"name\": \"game_mode_reverse_captains_mode\",\r\n      \"localized_name\": \"Reverse Captains Mode\"\r\n    },\r\n    \"9\": {\r\n      \"id\": 9,\r\n      \"name\": \"game_mode_greeviling\",\r\n      \"localized_name\": \"Greeviling\"\r\n    },\r\n    \"10\": {\r\n      \"id\": 10,\r\n      \"name\": \"game_mode_tutorial\",\r\n      \"localized_name\": \"Tutorial\"\r\n    },\r\n    \"11\": {\r\n      \"id\": 11,\r\n      \"name\": \"game_mode_mid_only\",\r\n      \"localized_name\": \"Mid Only\"\r\n    },\r\n    \"12\": {\r\n      \"id\": 12,\r\n      \"name\": \"game_mode_least_played\",\r\n      \"localized_name\": \"Least Played\",\r\n      \"balanced\": true\r\n    },\r\n    \"13\": {\r\n      \"id\": 13,\r\n      \"name\": \"game_mode_limited_heroes\",\r\n      \"localized_name\": \"Limited Heroes\"\r\n    },\r\n    \"14\": {\r\n      \"id\": 14,\r\n      \"name\": \"game_mode_compendium_matchmaking\",\r\n      \"localized_name\": \"Compendium Matchmaking\"\r\n    },\r\n    \"15\": {\r\n      \"id\": 15,\r\n      \"name\": \"game_mode_custom\",\r\n      \"localized_name\": \"Custom Game\"\r\n    },\r\n    \"16\": {\r\n      \"id\": 16,\r\n      \"name\": \"game_mode_captains_draft\",\r\n      \"localized_name\": \"Captains Draft\",\r\n      \"balanced\": true\r\n    },\r\n    \"17\": {\r\n      \"id\": 17,\r\n      \"name\": \"game_mode_balanced_draft\",\r\n      \"localized_name\": \"Balanced Draft\",\r\n      \"balanced\": true\r\n    },\r\n    \"18\": {\r\n      \"id\": 18,\r\n      \"name\": \"game_mode_ability_draft\",\r\n      \"localized_name\": \"Ability Draft\"\r\n    },\r\n    \"19\": {\r\n      \"id\": 19,\r\n      \"name\": \"game_mode_event\",\r\n      \"localized_name\": \"Event\"\r\n    },\r\n    \"20\": {\r\n      \"id\": 20,\r\n      \"name\": \"game_mode_all_random_death_match\",\r\n      \"localized_name\": \"Death Match\"\r\n    },\r\n    \"21\": {\r\n      \"id\": 21,\r\n      \"name\": \"game_mode_1v1_mid\",\r\n      \"localized_name\": \"1v1 Mid\"\r\n    },\r\n    \"22\": {\r\n      \"id\": 22,\r\n      \"name\": \"game_mode_all_draft\",\r\n      \"localized_name\": \"All Pick\",\r\n      \"balanced\": true\r\n    },\r\n    \"23\": {\r\n      \"id\": 23,\r\n      \"name\": \"game_mode_turbo\",\r\n      \"localized_name\": \"Turbo\"\r\n    },\r\n    \"24\": {\r\n      \"id\": 24,\r\n      \"name\": \"game_mode_mutation\",\r\n      \"localized_name\": \"Mutation\"\r\n    }\r\n  }",
+      "start": 1709213235150,
+      "end": 1709213235245,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213235245,
+      "end": 1709213235245,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213235245,
+      "end": 1709213235245,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213235245,
+      "end": 1709213235245,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213235245,
+      "end": 1709213235245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213235245,
+      "end": 1709213235245,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "result": "export default {\n\t\"0\": {\n\tid: 0,\n\tname: \"game_mode_unknown\",\n\tlocalized_name: \"Unknown\",\n\tbalanced: true\n},\n\t\"1\": {\n\tid: 1,\n\tname: \"game_mode_all_pick\",\n\tlocalized_name: \"All Pick\",\n\tbalanced: true\n},\n\t\"2\": {\n\tid: 2,\n\tname: \"game_mode_captains_mode\",\n\tlocalized_name: \"Captains Mode\",\n\tbalanced: true\n},\n\t\"3\": {\n\tid: 3,\n\tname: \"game_mode_random_draft\",\n\tlocalized_name: \"Random Draft\",\n\tbalanced: true\n},\n\t\"4\": {\n\tid: 4,\n\tname: \"game_mode_single_draft\",\n\tlocalized_name: \"Single Draft\",\n\tbalanced: true\n},\n\t\"5\": {\n\tid: 5,\n\tname: \"game_mode_all_random\",\n\tlocalized_name: \"All Random\",\n\tbalanced: true\n},\n\t\"6\": {\n\tid: 6,\n\tname: \"game_mode_intro\",\n\tlocalized_name: \"Intro\"\n},\n\t\"7\": {\n\tid: 7,\n\tname: \"game_mode_diretide\",\n\tlocalized_name: \"Diretide\"\n},\n\t\"8\": {\n\tid: 8,\n\tname: \"game_mode_reverse_captains_mode\",\n\tlocalized_name: \"Reverse Captains Mode\"\n},\n\t\"9\": {\n\tid: 9,\n\tname: \"game_mode_greeviling\",\n\tlocalized_name: \"Greeviling\"\n},\n\t\"10\": {\n\tid: 10,\n\tname: \"game_mode_tutorial\",\n\tlocalized_name: \"Tutorial\"\n},\n\t\"11\": {\n\tid: 11,\n\tname: \"game_mode_mid_only\",\n\tlocalized_name: \"Mid Only\"\n},\n\t\"12\": {\n\tid: 12,\n\tname: \"game_mode_least_played\",\n\tlocalized_name: \"Least Played\",\n\tbalanced: true\n},\n\t\"13\": {\n\tid: 13,\n\tname: \"game_mode_limited_heroes\",\n\tlocalized_name: \"Limited Heroes\"\n},\n\t\"14\": {\n\tid: 14,\n\tname: \"game_mode_compendium_matchmaking\",\n\tlocalized_name: \"Compendium Matchmaking\"\n},\n\t\"15\": {\n\tid: 15,\n\tname: \"game_mode_custom\",\n\tlocalized_name: \"Custom Game\"\n},\n\t\"16\": {\n\tid: 16,\n\tname: \"game_mode_captains_draft\",\n\tlocalized_name: \"Captains Draft\",\n\tbalanced: true\n},\n\t\"17\": {\n\tid: 17,\n\tname: \"game_mode_balanced_draft\",\n\tlocalized_name: \"Balanced Draft\",\n\tbalanced: true\n},\n\t\"18\": {\n\tid: 18,\n\tname: \"game_mode_ability_draft\",\n\tlocalized_name: \"Ability Draft\"\n},\n\t\"19\": {\n\tid: 19,\n\tname: \"game_mode_event\",\n\tlocalized_name: \"Event\"\n},\n\t\"20\": {\n\tid: 20,\n\tname: \"game_mode_all_random_death_match\",\n\tlocalized_name: \"Death Match\"\n},\n\t\"21\": {\n\tid: 21,\n\tname: \"game_mode_1v1_mid\",\n\tlocalized_name: \"1v1 Mid\"\n},\n\t\"22\": {\n\tid: 22,\n\tname: \"game_mode_all_draft\",\n\tlocalized_name: \"All Pick\",\n\tbalanced: true\n},\n\t\"23\": {\n\tid: 23,\n\tname: \"game_mode_turbo\",\n\tlocalized_name: \"Turbo\"\n},\n\t\"24\": {\n\tid: 24,\n\tname: \"game_mode_mutation\",\n\tlocalized_name: \"Mutation\"\n}\n};\n",
+      "start": 1709213235245,
+      "end": 1709213235246,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213235246,
+      "end": 1709213235246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213235247,
+      "end": 1709213235247,
+      "order": "normal"
+    }
+  ]
+}

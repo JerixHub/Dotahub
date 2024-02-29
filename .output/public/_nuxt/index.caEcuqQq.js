@@ -1,0 +1,1 @@
+import{_ as t,o,c as s,a as e}from"./entry.D7iSw0zz.js";const c={},a={class:"text-center text-white flex flex-col pt-20 items-center"},n=e("p",null,"Example Dota ID/Steam ID: 388214337",-1),_=e("p",null,"Steam Name: Azumabito",-1),r=e("a",{href:"#"},"Source Code Repository",-1),i=[n,_,r];function l(d,m){return o(),s("div",a,i)}const p=t(c,[["render",l]]);export{p as default};

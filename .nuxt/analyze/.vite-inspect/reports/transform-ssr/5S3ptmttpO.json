@@ -1,0 +1,275 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/error.vue?vue&type=style&index=0&scoped=a82b6ef5&lang.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\n.page-404 {\r\n  margin-top: 5rem;\r\n\r\n  &__logo {\r\n    color: var(--orange);\r\n  }\r\n\r\n  &__title {\r\n    color: var(--orange);\r\n    font-size: 3rem;\r\n  }\r\n}\r\n",
+      "start": 1709213239983,
+      "end": 1709213239983
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213239983,
+      "end": 1709213239983,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213239983,
+      "end": 1709213239983,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213239983,
+      "end": 1709213239983,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213239983,
+      "end": 1709213239983,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213239983,
+      "end": 1709213239983,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".page-404{margin-top:5rem}.page-404__logo,.page-404__title{color:var(--orange)}.page-404__title{font-size:3rem}",
+      "start": 1709213239983,
+      "end": 1709213240016,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/Jerixhub/Documents/Dota2/dotahub/error.vue",
+        "mappings": "AACA,UACE,gBAMA,iCAHE,oBAGF,iBAEE",
+        "names": [],
+        "sources": [
+          "C:/Users/Jerixhub/Documents/Dota2/dotahub/error.vue"
+        ],
+        "sourcesContent": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213240016,
+      "end": 1709213240016,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213240016,
+      "end": 1709213240016,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213240016,
+      "end": 1709213240016,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".page-404[data-v-a82b6ef5]{margin-top:5rem}.page-404__logo[data-v-a82b6ef5],.page-404__title[data-v-a82b6ef5]{color:var(--orange)}.page-404__title[data-v-a82b6ef5]{font-size:3rem}",
+      "start": 1709213240016,
+      "end": 1709213240018,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "C:/Users/Jerixhub/Documents/Dota2/dotahub/error.vue",
+        "mappings": "AAAA,2BAAU,eAAe,CAAC,mEAAiC,mBAAmB,CAAC,kCAAiB,cAAc",
+        "names": [],
+        "sources": [
+          "C:/Users/Jerixhub/Documents/Dota2/dotahub/error.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".page-404[data-v-a82b6ef5]{margin-top:5rem}.page-404__logo[data-v-a82b6ef5],.page-404__title[data-v-a82b6ef5]{color:var(--orange)}.page-404__title[data-v-a82b6ef5]{font-size:3rem}\"",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709213240018,
+      "end": 1709213240018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213240018,
+      "end": 1709213240019,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213240019,
+      "end": 1709213240019,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213240019,
+      "end": 1709213240019,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Friends.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div v-if=\"userFriends\">\r\n    <table class=\"table-auto user-friends\">\r\n      <thead>\r\n        <tr>\r\n          <th>Player</th>\r\n          <th>Matches</th>\r\n          <th>Winrate</th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr v-for=\"(value, key) in userFriends\" :key=\"key\">\r\n          <td>\r\n            <a :href=\"`/profile/${value.account_id}`\">\r\n              <div class=\"flex gap-2\">\r\n                <img :src=\"`${value.avatar}`\" alt=\"player-image\">\r\n                <span class=\"text-white font-bold\">{{ value.personaname }}</span>\r\n              </div>\r\n            </a>\r\n          </td>\r\n          <td>\r\n              <span class=\"text-white\">{{ value.games }}</span>\r\n          </td>\r\n          <td>\r\n              <span class=\"text-white\">{{ winrate(value.games, value.win) }}%</span>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nconst props = defineProps({\r\n  userFriends: {\r\n    type: Array,\r\n    default: () => []\r\n  }\r\n})\r\n\r\nfunction winrate (games, wins) {\r\n  return ((wins / games) * 100).toFixed(2)\r\n}\r\n</script>\r\n",
+      "start": 1709213241318,
+      "end": 1709213241411,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213241411,
+      "end": 1709213241411,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\n\nconst _sfc_main = {\n  __name: 'Friends',\n  __ssrInlineRender: true,\n  props: {\r\n  userFriends: {\r\n    type: Array,\r\n    default: () => []\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nfunction winrate (games, wins) {\r\n  return ((wins / games) * 100).toFixed(2)\r\n}\r\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  if (__props.userFriends) {\n    _push(`<div${_ssrRenderAttrs(_attrs)}><table class=\"table-auto user-friends\"><thead><tr><th>Player</th><th>Matches</th><th>Winrate</th></tr></thead><tbody><!--[-->`)\n    _ssrRenderList(__props.userFriends, (value, key) => {\n      _push(`<tr><td><a${\n        _ssrRenderAttr(\"href\", `/profile/${value.account_id}`)\n      }><div class=\"flex gap-2\"><img${\n        _ssrRenderAttr(\"src\", `${value.avatar}`)\n      } alt=\"player-image\"><span class=\"text-white font-bold\">${\n        _ssrInterpolate(value.personaname)\n      }</span></div></a></td><td><span class=\"text-white\">${\n        _ssrInterpolate(value.games)\n      }</span></td><td><span class=\"text-white\">${\n        _ssrInterpolate(winrate(value.games, value.win))\n      }%</span></td></tr>`)\n    })\n    _push(`<!--]--></tbody></table></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n}\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Friends.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
+      "start": 1709213241411,
+      "end": 1709213241412,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Friends.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n  <div v-if=\"userFriends\">\r\n    <table class=\"table-auto user-friends\">\r\n      <thead>\r\n        <tr>\r\n          <th>Player</th>\r\n          <th>Matches</th>\r\n          <th>Winrate</th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr v-for=\"(value, key) in userFriends\" :key=\"key\">\r\n          <td>\r\n            <a :href=\"`/profile/${value.account_id}`\">\r\n              <div class=\"flex gap-2\">\r\n                <img :src=\"`${value.avatar}`\" alt=\"player-image\">\r\n                <span class=\"text-white font-bold\">{{ value.personaname }}</span>\r\n              </div>\r\n            </a>\r\n          </td>\r\n          <td>\r\n              <span class=\"text-white\">{{ value.games }}</span>\r\n          </td>\r\n          <td>\r\n              <span class=\"text-white\">{{ winrate(value.games, value.win) }}%</span>\r\n          </td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\nconst props = defineProps({\r\n  userFriends: {\r\n    type: Array,\r\n    default: () => []\r\n  }\r\n})\r\n\r\nfunction winrate (games, wins) {\r\n  return ((wins / games) * 100).toFixed(2)\r\n}\r\n</script>\r\n"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;;;AAgCc,CAAC;AACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OAKZ,CAAC;AACH,CAAC;AACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACjC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3C,CAAC,CAAC;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213241412,
+      "end": 1709213241412,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213241412,
+      "end": 1709213241412,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213241412,
+      "end": 1709213241412,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213241412,
+      "end": 1709213241412,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213241412,
+      "end": 1709213241412,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213241412,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213241413,
+      "end": 1709213241413,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213241413,
+      "end": 1709213241414,
+      "order": "normal"
+    }
+  ]
+}

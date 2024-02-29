@@ -1,0 +1,258 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Matches.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div v-if=\"userMatches && heroStats\">\r\n      <table class=\"table-auto recent-match\">\r\n        <thead>\r\n          <tr>\r\n            <th>Hero</th>\r\n            <th>Result</th>\r\n            <th>Mode</th>\r\n            <th>Team</th>\r\n            <th>KDA</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr v-for=\"(value, key) in userMatches\" :key=\"key\">\r\n            <td>\r\n              <div class=\"flex gap-2\">\r\n                <img :src=\"`/images/heroes/${heroStats[value.hero_id].localized_name.toLowerCase().replaceAll(' ', '_').replaceAll('-', '_').replaceAll(`'`, '_')}_sb.png`\" alt=\"hero-image\">\r\n                <span class=\"text-white\">{{ heroStats[value.hero_id].localized_name }}</span>\r\n              </div>\r\n            </td>\r\n            <td>\r\n              <span :class=\"[value.radiant_win ? 'text-green-500' : 'text-red-500', 'font-bold']\">{{ gameResult(`${value.radiant_win}`,team(`${value.player_slot}`)) }}</span>\r\n            </td>\r\n            <td>\r\n              <div class=\"flex flex-col\">\r\n                <span class=\"text-white\">{{ gameModes[value.game_mode].localized_name }}</span>\r\n                <span class=\"text-white\">{{ durationCalc(value.duration) }}</span>\r\n              </div>\r\n            </td>\r\n            <td>\r\n              <span class=\"text-white\">{{ team(`${value.player_slot}`) }}</span>\r\n            </td>\r\n            <td>\r\n              <span class=\"text-white\">{{ `${value.kills}/${value.deaths}/${value.assists}` }}</span>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n</template>\r\n\r\n<script setup>\r\nimport gameModes from '~/assets/json/gamemodes.json'\r\n\r\nconst props = defineProps({\r\n  userMatches: {\r\n    type: Array,\r\n    default: () => []\r\n  },\r\n  heroStats: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n})\r\n\r\nfunction team (val) {\r\n  return (val > 127 ? 'Dire' : 'Radiant')\r\n}\r\n\r\nfunction gameResult (val, team) {\r\n  return ((team === 'Radiant' && val === 'true') || (team === 'Dire' && val === 'false') ? 'Won' : 'Lost')\r\n}\r\n\r\nfunction durationCalc (val) {\r\n  val /= 60\r\n  let m = Math.floor(val)\r\n  let s = Math.ceil((val - Math.floor(val)) * 60)\r\n  return s < 10 ? m + ':0' + s : m + ':' + s\r\n}\r\n</script>\r\n",
+      "start": 1709213241324,
+      "end": 1709213241414,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213241414,
+      "end": 1709213241414,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { unref as _unref } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderClass as _ssrRenderClass, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nimport gameModes from '~/assets/json/gamemodes.json'\r\n\r\n\nconst _sfc_main = {\n  __name: 'Matches',\n  __ssrInlineRender: true,\n  props: {\r\n  userMatches: {\r\n    type: Array,\r\n    default: () => []\r\n  },\r\n  heroStats: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nfunction team (val) {\r\n  return (val > 127 ? 'Dire' : 'Radiant')\r\n}\r\n\r\nfunction gameResult (val, team) {\r\n  return ((team === 'Radiant' && val === 'true') || (team === 'Dire' && val === 'false') ? 'Won' : 'Lost')\r\n}\r\n\r\nfunction durationCalc (val) {\r\n  val /= 60\r\n  let m = Math.floor(val)\r\n  let s = Math.ceil((val - Math.floor(val)) * 60)\r\n  return s < 10 ? m + ':0' + s : m + ':' + s\r\n}\r\n\nreturn (_ctx, _push, _parent, _attrs) => {\n  if (__props.userMatches && __props.heroStats) {\n    _push(`<div${_ssrRenderAttrs(_attrs)}><table class=\"table-auto recent-match\"><thead><tr><th>Hero</th><th>Result</th><th>Mode</th><th>Team</th><th>KDA</th></tr></thead><tbody><!--[-->`)\n    _ssrRenderList(__props.userMatches, (value, key) => {\n      _push(`<tr><td><div class=\"flex gap-2\"><img${\n        _ssrRenderAttr(\"src\", `/images/heroes/${__props.heroStats[value.hero_id].localized_name.toLowerCase().replaceAll(' ', '_').replaceAll('-', '_').replaceAll(`'`, '_')}_sb.png`)\n      } alt=\"hero-image\"><span class=\"text-white\">${\n        _ssrInterpolate(__props.heroStats[value.hero_id].localized_name)\n      }</span></div></td><td><span class=\"${\n        _ssrRenderClass([value.radiant_win ? 'text-green-500' : 'text-red-500', 'font-bold'])\n      }\">${\n        _ssrInterpolate(gameResult(`${value.radiant_win}`,team(`${value.player_slot}`)))\n      }</span></td><td><div class=\"flex flex-col\"><span class=\"text-white\">${\n        _ssrInterpolate(_unref(gameModes)[value.game_mode].localized_name)\n      }</span><span class=\"text-white\">${\n        _ssrInterpolate(durationCalc(value.duration))\n      }</span></div></td><td><span class=\"text-white\">${\n        _ssrInterpolate(team(`${value.player_slot}`))\n      }</span></td><td><span class=\"text-white\">${\n        _ssrInterpolate(`${value.kills}/${value.deaths}/${value.assists}`)\n      }</span></td></tr>`)\n    })\n    _push(`<!--]--></tbody></table></div>`)\n  } else {\n    _push(`<!---->`)\n  }\n}\n}\n\n}\n\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Matches.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nexport default _sfc_main",
+      "start": 1709213241414,
+      "end": 1709213241416,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/Matches.vue"
+        ],
+        "sourcesContent": [
+          "<template>\r\n    <div v-if=\"userMatches && heroStats\">\r\n      <table class=\"table-auto recent-match\">\r\n        <thead>\r\n          <tr>\r\n            <th>Hero</th>\r\n            <th>Result</th>\r\n            <th>Mode</th>\r\n            <th>Team</th>\r\n            <th>KDA</th>\r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr v-for=\"(value, key) in userMatches\" :key=\"key\">\r\n            <td>\r\n              <div class=\"flex gap-2\">\r\n                <img :src=\"`/images/heroes/${heroStats[value.hero_id].localized_name.toLowerCase().replaceAll(' ', '_').replaceAll('-', '_').replaceAll(`'`, '_')}_sb.png`\" alt=\"hero-image\">\r\n                <span class=\"text-white\">{{ heroStats[value.hero_id].localized_name }}</span>\r\n              </div>\r\n            </td>\r\n            <td>\r\n              <span :class=\"[value.radiant_win ? 'text-green-500' : 'text-red-500', 'font-bold']\">{{ gameResult(`${value.radiant_win}`,team(`${value.player_slot}`)) }}</span>\r\n            </td>\r\n            <td>\r\n              <div class=\"flex flex-col\">\r\n                <span class=\"text-white\">{{ gameModes[value.game_mode].localized_name }}</span>\r\n                <span class=\"text-white\">{{ durationCalc(value.duration) }}</span>\r\n              </div>\r\n            </td>\r\n            <td>\r\n              <span class=\"text-white\">{{ team(`${value.player_slot}`) }}</span>\r\n            </td>\r\n            <td>\r\n              <span class=\"text-white\">{{ `${value.kills}/${value.deaths}/${value.assists}` }}</span>\r\n            </td>\r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n</template>\r\n\r\n<script setup>\r\nimport gameModes from '~/assets/json/gamemodes.json'\r\n\r\nconst props = defineProps({\r\n  userMatches: {\r\n    type: Array,\r\n    default: () => []\r\n  },\r\n  heroStats: {\r\n    type: Object,\r\n    default: () => {}\r\n  }\r\n})\r\n\r\nfunction team (val) {\r\n  return (val > 127 ? 'Dire' : 'Radiant')\r\n}\r\n\r\nfunction gameResult (val, team) {\r\n  return ((team === 'Radiant' && val === 'true') || (team === 'Dire' && val === 'false') ? 'Won' : 'Lost')\r\n}\r\n\r\nfunction durationCalc (val) {\r\n  val /= 60\r\n  let m = Math.floor(val)\r\n  let s = Math.ceil((val - Math.floor(val)) * 60)\r\n  return s < 10 ? m + ':0' + s : m + ':' + s\r\n}\r\n</script>\r\n"
+        ],
+        "names": [],
+        "mappings": ";;;AA0CA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrD,CAAC;;;;;;;;;;;;;;;;AAFa,CAAC;AAGf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,OASZ,CAAC;AACH,CAAC;AACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1C,CAAC,CAAC;AACF,CAAC;AACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3G,CAAC,CAAC;AACF,CAAC;AACD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAClD,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC7C,CAAC,CAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213241416,
+      "end": 1709213241416,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213241416,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213241416,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213241420,
+      "end": 1709213241420,
+      "order": "normal"
+    }
+  ]
+}

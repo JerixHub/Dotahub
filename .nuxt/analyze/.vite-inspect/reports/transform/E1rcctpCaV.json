@@ -1,0 +1,215 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/components/SearchResults.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <div class=\"bg-white w-full absolute border\">\r\n        <ul class=\"list-none max-h-80 overflow-y-scroll\">\r\n            <SearchResultsItem v-for=\"user in userList\" :key=\"user.account_id\" :user=\"user\" />\r\n        </ul>\r\n    </div>\r\n</template>\r\n\r\n<script setup>\r\nconst props = defineProps({\r\n  userList: {\r\n    type: Array,\r\n    default: () => []\r\n  }\r\n})\r\n\r\nfunction closeResults() {\r\n  emit('onEnter')\r\n}\r\n</script>\r\n",
+      "start": 1709213235191,
+      "end": 1709213235252,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213235253,
+      "end": 1709213235253,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213235253,
+      "end": 1709213235253,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213235253,
+      "end": 1709213235253,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1709213235253,
+      "end": 1709213235253,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213235253,
+      "end": 1709213235253,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213235253,
+      "end": 1709213235253,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213235253,
+      "end": 1709213235253,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createBlock as _createBlock, createElementVNode as _createElementVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-white w-full absolute border\" }\nconst _hoisted_2 = { class: \"list-none max-h-80 overflow-y-scroll\" }\n\n\nconst _sfc_main = {\n  __name: 'SearchResults',\n  props: {\r\n  userList: {\r\n    type: Array,\r\n    default: () => []\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nfunction closeResults() {\r\n  emit('onEnter')\r\n}\r\n\nreturn (_ctx, _cache) => {\n  const _component_SearchResultsItem = _resolveComponent(\"SearchResultsItem\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"ul\", _hoisted_2, [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.userList, (user) => {\n        return (_openBlock(), _createBlock(_component_SearchResultsItem, {\n          key: user.account_id,\n          user: user\n        }, null, 8, [\"user\"]))\n      }), 128))\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1709213235253,
+      "end": 1709213235254,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213235254,
+      "end": 1709213235254,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"C:/Users/Jerixhub/Documents/Dota2/dotahub/components/SearchResultsItem.vue\";\nimport { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createBlock as _createBlock, createElementVNode as _createElementVNode } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-white w-full absolute border\" }\nconst _hoisted_2 = { class: \"list-none max-h-80 overflow-y-scroll\" }\n\n\nconst _sfc_main = {\n  __name: 'SearchResults',\n  props: {\r\n  userList: {\r\n    type: Array,\r\n    default: () => []\r\n  }\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nfunction closeResults() {\r\n  emit('onEnter')\r\n}\r\n\nreturn (_ctx, _cache) => {\n  const _component_SearchResultsItem = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"ul\", _hoisted_2, [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(__props.userList, (user) => {\n        return (_openBlock(), _createBlock(_component_SearchResultsItem, {\n          key: user.account_id,\n          user: user\n        }, null, 8, [\"user\"]))\n      }), 128))\n    ])\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213235255,
+      "end": 1709213235255,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "resolvedId": "C:/Users/Jerixhub/Documents/Dota2/dotahub/assets/scss/main.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "@import '_fonts';\r\n\r\n:root {\r\n    --header-bg: #161616;\r\n    --red: #B01220;\r\n    --default-font-size: 1rem;\r\n    --default-font-weight: 400;\r\n    --default-line-height: 1.5;\r\n    --bg-dota: url('../images/bg-dota.png')\r\n}\r\n\r\nbody {\r\n    font-family: 'Oxanium', sans-serif;\r\n    font-size: var(--default-font-size);\r\n    font-weight: var(--default-font-weight);\r\n    line-height: var(--default-line-height);\r\n}\r\n\r\n.header-bg{\r\n    background: linear-gradient(90deg, #242627, #131617);\r\n}\r\n\r\n.bg-dota{\r\n    background: var(--bg-dota);\r\n    height: 100%;\r\n    min-height: 100vh;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    padding-bottom: 50px;\r\n}\r\n\r\n.bg-red{\r\n    background-color: var(--red);\r\n}\r\n\r\n.red{ \r\n    color: var(--red);\r\n}\r\n\r\n.font-trajan{\r\n    font-family: 'Trajan'\r\n}\r\n\r\n.font-oxanium{\r\n    font-family: 'Oxanium'\r\n}\r\n\r\np.leaderboard{\r\n    position: relative;\r\n    top: -45px;\r\n    text-align: center;\r\n    font-size: 24px;\r\n    color: white;\r\n    font-weight: bold;\r\n}\r\n\r\n.hero-ability-bg{\r\n    background: linear-gradient(90deg, #242627, #131617);\r\n    width: 100%;\r\n    padding: 20px 20px 20px 20px;\r\n    left: 0;\r\n    margin-top: 40px;\r\n}\r\n\r\n.hero-img{\r\n    width: 150px;\r\n}\r\n\r\n.hero-healthbar {\r\n    width: 150px;\r\n    height: 22px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    background: linear-gradient(to right, #286323, #7AF03C);\r\n    position: relative;\r\n}\r\n\r\n.hero-manabar {\r\n    width: 150px;\r\n    height: 22px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    background: linear-gradient(to right, #1056DB, #73F5FE);\r\n    position: relative;\r\n}\r\n\r\n.hero-base-health, .hero-base-mana {\r\n    position: absolute;\r\n    width: 100%;\r\n    font-size: 15px;\r\n    text-shadow: 1px 1px 2px #000;\r\n    text-align: center;\r\n}\r\n\r\n.hero-base-health-regen, .hero-base-mana-regen {\r\n    color: #286323;\r\n    flex-grow: 1;\r\n    text-align: right;\r\n    font-size: 11px;\r\n    padding-right: 16px;\r\n    font-weight: bold;\r\n}\r\n\r\n.attributes img{\r\n    width: 30px;\r\n}\r\n\r\n.attributes span{    \r\n    text-shadow: 1px 1px 2px #000;\r\n}\r\n\r\n.attributes .gain {\r\n    color: #999;\r\n}\r\n\r\n.hero-attributes {\r\n    width: 30%;\r\n}\r\n\r\n.border-separator {\r\n    width: 1px;\r\n    height: 130px;\r\n    display: flex;\r\n    flex-direction: row;\r\n}\r\n\r\n.border-separator::after{\r\n    content: \"\";\r\n    width: 100%;\r\n    height: 100%;\r\n    background-color: #4f4f4f;\r\n}\r\n\r\n.hero-info .most_attr_hero{\r\n    text-shadow: 1px 1px 2px #000;\r\n}\r\n\r\n.tabber-parent{\r\n    border-bottom: 1px solid white;\r\n}\r\n\r\n.tabber.active {\r\n    border: 1px solid white;\r\n    padding: 10px 15px;\r\n    border-bottom: none;\r\n    background-color: #191b1c;\r\n}\r\n\r\n.tabber:not(.active){\r\n    padding: 10px 15px;\r\n}\r\n\r\n.tab-container{\r\n    border: 1px solid white;\r\n    background: linear-gradient(90deg, #242627, #131617);\r\n    border-top: none;\r\n}\r\n\r\ntable.recent-match, table.user-heroes, table.user-friends{\r\n    width: 100%;\r\n    margin-top: 20px;\r\n}\r\n\r\ntable.recent-match thead, table.user-heroes thead, table.user-friends thead{\r\n    border-bottom: 1px solid white;\r\n    border-top: 1px solid white;\r\n}\r\n\r\ntable.recent-match thead>tr>th, table.user-heroes thead>tr>th, table.user-friends thead>tr>th{\r\n    text-align: left;\r\n    color: white;\r\n}\r\n\r\ntable.recent-match tbody>tr>td, table.user-heroes tbody>tr>td, table.user-friends tbody>tr>td{\r\n    padding: 15px 0px;\r\n    border-bottom: 1px solid white;\r\n}\r\n\r\ntable.recent-match tbody>tr:hover, table.user-heroes tbody>tr:hover, table.user-friends tbody>tr:hover{\r\n    background-color: #2A3032;\r\n}",
+      "start": 1709213239980,
+      "end": 1709213240112,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213240112,
+      "end": 1709213240112,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1709213240112,
+      "end": 1709213240112,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213240112,
+      "end": 1709213240112,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1709213240112,
+      "end": 1709213240112,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1709213240112,
+      "end": 1709213240112,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "@font-face{font-family:Oxanium;font-weight:600;src:url(__VITE_ASSET__B6z6Likj__) format(\"ttf\")}@font-face{font-family:Oxanium;font-weight:300;src:url(__VITE_ASSET__BgkBahq___) format(\"truetype\")}@font-face{font-family:Oxanium;font-weight:500;src:url(__VITE_ASSET__Cb7kggtO__) format(\"truetype\")}@font-face{font-family:Oxanium;font-weight:400;src:url(__VITE_ASSET__CBS0kjVJ__) format(\"truetype\")}@font-face{font-family:Trajan;font-weight:600;src:url(__VITE_ASSET__qNJMjScJ__) format(\"truetype\")}@font-face{font-family:Trajan;font-weight:300;src:url(__VITE_ASSET__oNdFm2zj__) format(\"truetype\")}@font-face{font-family:Trajan;font-weight:400;src:url(__VITE_ASSET__MWhnTxAb__) format(\"truetype\")}:root{--header-bg:#161616;--red:#b01220;--default-font-size:1rem;--default-font-weight:400;--default-line-height:1.5;--bg-dota:url(__VITE_ASSET__NwaLaeJ2__)}body{font-family:Oxanium,sans-serif;font-size:1rem;font-size:var(--default-font-size);font-weight:400;font-weight:var(--default-font-weight);line-height:1.5;line-height:var(--default-line-height)}.header-bg{background:linear-gradient(90deg,#242627,#131617)}.bg-dota{background:url(../images/bg-dota.png);background:var(--bg-dota);background-position:50%;background-repeat:no-repeat;background-size:cover;height:100%;min-height:100vh;padding-bottom:50px}.bg-red{background-color:#b01220;background-color:var(--red)}.red{color:#b01220;color:var(--red)}.font-trajan{font-family:Trajan}.font-oxanium{font-family:Oxanium}p.leaderboard{color:#fff;font-size:24px;font-weight:700;position:relative;text-align:center;top:-45px}.hero-ability-bg{background:linear-gradient(90deg,#242627,#131617);left:0;margin-top:40px;padding:20px;width:100%}.hero-img{width:150px}.hero-healthbar{background:linear-gradient(90deg,#286323,#7af03c)}.hero-healthbar,.hero-manabar{align-items:center;display:flex;flex-direction:row;height:22px;position:relative;width:150px}.hero-manabar{background:linear-gradient(90deg,#1056db,#73f5fe)}.hero-base-health,.hero-base-mana{font-size:15px;position:absolute;text-align:center;text-shadow:1px 1px 2px #000;width:100%}.hero-base-health-regen,.hero-base-mana-regen{color:#286323;flex-grow:1;font-size:11px;font-weight:700;padding-right:16px;text-align:right}.attributes img{width:30px}.attributes span{text-shadow:1px 1px 2px #000}.attributes .gain{color:#999}.hero-attributes{width:30%}.border-separator{display:flex;flex-direction:row;height:130px;width:1px}.border-separator:after{background-color:#4f4f4f;content:\"\";height:100%;width:100%}.hero-info .most_attr_hero{text-shadow:1px 1px 2px #000}.tabber-parent{border-bottom:1px solid #fff}.tabber.active{background-color:#191b1c;border:1px solid #fff;border-bottom:none}.tabber.active,.tabber:not(.active){padding:10px 15px}.tab-container{background:linear-gradient(90deg,#242627,#131617);border:1px solid #fff;border-top:none}table.recent-match,table.user-friends,table.user-heroes{margin-top:20px;width:100%}table.recent-match thead,table.user-friends thead,table.user-heroes thead{border-bottom:1px solid #fff;border-top:1px solid #fff}table.recent-match thead>tr>th,table.user-friends thead>tr>th,table.user-heroes thead>tr>th{color:#fff;text-align:left}table.recent-match tbody>tr>td,table.user-friends tbody>tr>td,table.user-heroes tbody>tr>td{border-bottom:1px solid #fff;padding:15px 0}table.recent-match tbody>tr:hover,table.user-friends tbody>tr:hover,table.user-heroes tbody>tr:hover{background-color:#2a3032}",
+      "start": 1709213240112,
+      "end": 1709213240563,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "C:/Users/Jerixhub/Documents/Dota2/dotahub/assets/scss/main.scss",
+        "mappings": "AAAA,WACI,oBAEA,gBADA,gDAIJ,WACI,oBAEA,gBADA,qDAIJ,WACI,oBAEA,gBADA,qDAIJ,WACI,oBAEA,gBADA,qDAIJ,WACI,mBAEA,gBADA,qDAIJ,WACI,mBAEA,gBADA,qDAIJ,WACI,mBAEA,gBADA,qDCpCJ,MACI,oBACA,cACA,yBACA,0BACA,0BACA,wCAGJ,KACI,+BACA,kDACA,uDACA,uDAGJ,WACI,kDAGJ,SACI,gEAGA,wBACA,4BACA,sBAJA,YACA,iBAIA,oBAGJ,QACI,qDAGJ,KACI,+BAGJ,aACI,mBAGJ,cACI,oBAGJ,cAKI,WADA,eAEA,gBALA,kBAEA,kBADA,UAOJ,iBACI,kDAGA,OACA,gBAFA,aADA,WAMJ,UACI,YAGJ,gBAMI,kDAIJ,8BALI,mBAFA,aACA,mBAFA,YAKA,kBANA,YASJ,cAMI,kDAIJ,kCAGI,eAFA,kBAIA,kBADA,6BAFA,WAMJ,8CACI,cACA,YAEA,eAEA,gBADA,mBAFA,iBAMJ,gBACI,WAGJ,iBACI,6BAGJ,kBACI,WAGJ,iBACI,UAGJ,kBAGI,aACA,mBAFA,aADA,UAMJ,wBAII,yBAHA,WAEA,YADA,WAKJ,2BACI,6BAGJ,eACI,6BAGJ,eAII,yBADA,yCAIJ,oCALI,kBASJ,eAEI,kDACA,sCAGJ,wDAEI,gBADA,WAIJ,0EACI,6BACA,0BAGJ,4FAEI,WADA,gBAIJ,4FAEI,6BADA,eAIJ,qGACI",
+        "names": [],
+        "sources": [
+          "C:/Users/Jerixhub/Documents/Dota2/dotahub/assets/scss/_fonts.scss",
+          "C:/Users/Jerixhub/Documents/Dota2/dotahub/assets/scss/main.scss"
+        ],
+        "sourcesContent": [
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \"@font-face{font-family:Oxanium;font-weight:600;src:url(__VITE_ASSET__B6z6Likj__) format(\\\"ttf\\\")}@font-face{font-family:Oxanium;font-weight:300;src:url(__VITE_ASSET__BgkBahq___) format(\\\"truetype\\\")}@font-face{font-family:Oxanium;font-weight:500;src:url(__VITE_ASSET__Cb7kggtO__) format(\\\"truetype\\\")}@font-face{font-family:Oxanium;font-weight:400;src:url(__VITE_ASSET__CBS0kjVJ__) format(\\\"truetype\\\")}@font-face{font-family:Trajan;font-weight:600;src:url(__VITE_ASSET__qNJMjScJ__) format(\\\"truetype\\\")}@font-face{font-family:Trajan;font-weight:300;src:url(__VITE_ASSET__oNdFm2zj__) format(\\\"truetype\\\")}@font-face{font-family:Trajan;font-weight:400;src:url(__VITE_ASSET__MWhnTxAb__) format(\\\"truetype\\\")}:root{--header-bg:#161616;--red:#b01220;--default-font-size:1rem;--default-font-weight:400;--default-line-height:1.5;--bg-dota:url(__VITE_ASSET__NwaLaeJ2__)}body{font-family:Oxanium,sans-serif;font-size:1rem;font-size:var(--default-font-size);font-weight:400;font-weight:var(--default-font-weight);line-height:1.5;line-height:var(--default-line-height)}.header-bg{background:linear-gradient(90deg,#242627,#131617)}.bg-dota{background:url(../images/bg-dota.png);background:var(--bg-dota);background-position:50%;background-repeat:no-repeat;background-size:cover;height:100%;min-height:100vh;padding-bottom:50px}.bg-red{background-color:#b01220;background-color:var(--red)}.red{color:#b01220;color:var(--red)}.font-trajan{font-family:Trajan}.font-oxanium{font-family:Oxanium}p.leaderboard{color:#fff;font-size:24px;font-weight:700;position:relative;text-align:center;top:-45px}.hero-ability-bg{background:linear-gradient(90deg,#242627,#131617);left:0;margin-top:40px;padding:20px;width:100%}.hero-img{width:150px}.hero-healthbar{background:linear-gradient(90deg,#286323,#7af03c)}.hero-healthbar,.hero-manabar{align-items:center;display:flex;flex-direction:row;height:22px;position:relative;width:150px}.hero-manabar{background:linear-gradient(90deg,#1056db,#73f5fe)}.hero-base-health,.hero-base-mana{font-size:15px;position:absolute;text-align:center;text-shadow:1px 1px 2px #000;width:100%}.hero-base-health-regen,.hero-base-mana-regen{color:#286323;flex-grow:1;font-size:11px;font-weight:700;padding-right:16px;text-align:right}.attributes img{width:30px}.attributes span{text-shadow:1px 1px 2px #000}.attributes .gain{color:#999}.hero-attributes{width:30%}.border-separator{display:flex;flex-direction:row;height:130px;width:1px}.border-separator:after{background-color:#4f4f4f;content:\\\"\\\";height:100%;width:100%}.hero-info .most_attr_hero{text-shadow:1px 1px 2px #000}.tabber-parent{border-bottom:1px solid #fff}.tabber.active{background-color:#191b1c;border:1px solid #fff;border-bottom:none}.tabber.active,.tabber:not(.active){padding:10px 15px}.tab-container{background:linear-gradient(90deg,#242627,#131617);border:1px solid #fff;border-top:none}table.recent-match,table.user-friends,table.user-heroes{margin-top:20px;width:100%}table.recent-match thead,table.user-friends thead,table.user-heroes thead{border-bottom:1px solid #fff;border-top:1px solid #fff}table.recent-match thead>tr>th,table.user-friends thead>tr>th,table.user-heroes thead>tr>th{color:#fff;text-align:left}table.recent-match tbody>tr>td,table.user-friends tbody>tr>td,table.user-heroes tbody>tr>td{border-bottom:1px solid #fff;padding:15px 0}table.recent-match tbody>tr:hover,table.user-friends tbody>tr:hover,table.user-heroes tbody>tr:hover{background-color:#2a3032}\"",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1709213240563,
+      "end": 1709213240563,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1709213240564,
+      "end": 1709213240564,
+      "order": "normal"
+    }
+  ]
+}
